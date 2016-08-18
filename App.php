@@ -2,9 +2,12 @@
 
 namespace Wea;
 
-require_once 'Wea/Config.php';
-require_once 'Wea/Roteador.php';
-require_once 'Wea/Layout.php';
+use Wea\Config;
+use Wea\Roteador;
+use Wea\Layout;
+//require_once 'Wea/Config.php';
+//require_once 'Wea/Roteador.php';
+//require_once 'Wea/Layout.php';
 
 class App {
     
@@ -13,6 +16,7 @@ class App {
     public $layout;
 
     public function __construct($arqConfig = NULL,$arqPaginas = NULL) {
+        echo 'X';
         $this->config = new Config\Config($arqConfig);
         $this->roteador = new Roteador\Roteador($arqPaginas);
         $this->layout = new Layout\Layout();
@@ -28,7 +32,6 @@ class App {
     
     public function Run(){
         $this->layout->loadLayout($this->roteador->getPagina());
-        
         //$pagina = $this->roteador->getPagina();
         //echo $pagina['caminho'];
         //echo 'XXXXXXXXXXXXXXXXX';

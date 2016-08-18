@@ -14,11 +14,11 @@ class Layout {
     }
 
     public function setLayout($layout = null) {
-        include 'config/layouts.php';
+        //include 'config/layouts.php';
         $lay = is_null($layout) ? 'default' : $layout;
         $lay = isset($layouts[$lay]) ? $lay : 'default';
-        $this->header = $layouts[$lay]['header'];
-        $this->footer = $layouts[$lay]['footer'];
+        //$this->header = $layouts[$lay]['header'];
+        //$this->footer = $layouts[$lay]['footer'];
     }
 
     public function getHeader() {

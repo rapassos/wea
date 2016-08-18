@@ -2,7 +2,8 @@
 
 namespace Wea\Roteador;
 
-require_once 'Wea/AnalisadorRequisicao.php';
+use Wea\Roteador\Requisicao\AnalisadorRequisicao;
+//require_once 'Wea/AnalisadorRequisicao.php';
 
 class Roteador{
     
