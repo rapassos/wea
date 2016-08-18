@@ -1,0 +1,15 @@
+{
+    "name": "rapassos/Wea",
+    "description": "Web Application Engine by Rapassos",
+    "keywords": [
+        "framework",
+        "Web Application",
+	"Rapassos"
+    ],
+    "authors": [ 
+        {
+            "name": "Rafael Passos Guimarães",
+            "email": "rapassos@rapassos.com.br"
+        }
+    ]
+}
