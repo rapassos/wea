@@ -1,6 +1,6 @@
 <?php
 
-namespace Wea\Layout;
+namespace wea\V;
 
 class Layout {
 
@@ -15,6 +15,9 @@ class Layout {
 
     public function setLayout($layout = null) {
         //include 'config/layouts.php';
+        echo '<pre></br></br></br>';
+        var_dump(\wea\M\App::getInstance());
+        echo '</br></br></br></pre>';
         $lay = is_null($layout) ? 'default' : $layout;
         $lay = isset($layouts[$lay]) ? $lay : 'default';
         //$this->header = $layouts[$lay]['header'];

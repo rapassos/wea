@@ -1,6 +1,6 @@
 <?php
 
-namespace Wea\Roteador\Requisicao;
+namespace wea\M;
 
 class AnalisadorRequisicao{
     

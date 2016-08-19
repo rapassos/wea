@@ -1,8 +1,8 @@
 <?php
 
-namespace Wea\Roteador;
+namespace wea\C;
 
-use Wea\Roteador\Requisicao\AnalisadorRequisicao;
+//use wea\AnalisadorRequisicao;
 //require_once 'Wea/AnalisadorRequisicao.php';
 
 class Roteador{
@@ -14,7 +14,7 @@ class Roteador{
 
     public function __construct($arqPaginas = NULL) {
         $this->setArqPaginas($arqPaginas);
-        $this->analisadorRequisicao = new Requisicao\AnalisadorRequisicao();
+        $this->analisadorRequisicao = new \wea\M\AnalisadorRequisicao();
     }
     
     private function setArqPaginas($arqPaginas = NULL){
